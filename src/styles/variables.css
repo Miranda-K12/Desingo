@@ -1,0 +1,85 @@
+:root {
+  /* Colors */
+  --color-primary-peach: #e7816b;
+  --color-primary-black: #1d1c1e;
+  --color-primary-white: #ffffff;
+
+  --color-secondary-light-peach: #ffad9b;
+  --color-secondary-dark-grey: #333136;
+  --color-secondary-light-grey: #f1f3f5;
+
+  /* Border Radius */
+  --border-radius-small: 8px;
+  --border-radius-medium: 15px;
+
+  /* Transition */
+  --transition: all 0.3s ease;
+
+  /* Font Family */
+  --font-family-primary: "Jost", sans-serif;
+
+  /* Typography: Headings */
+  --h1-font-weight: 500;
+  --h1-font-size: 48px;
+  --h1-line-height: 48px;
+  --h1-letter-spacing: 0;
+
+  --h2-font-weight: 500;
+  --h2-font-size: 40px;
+  --h2-line-height: 48px;
+  --h2-letter-spacing: 2px;
+
+  --h3-font-weight: 500;
+  --h3-font-size: 20px;
+  --h3-line-height: 26px;
+  --h3-letter-spacing: 5px;
+
+  /* Body Text */
+  --body-font-size: 16px;
+  --body-line-height: 26px;
+  --body-letter-spacing: 0;
+  --body-font-weight-regular: 400;
+  --body-font-weight-bold: 700;
+
+  /* Body Small */
+  --body-small-font-weight: 500;
+  --body-small-font-size: 15px;
+  --body-small-line-height: 100%;
+  --body-small-letter-spacing: 5px;
+  --body-small-text-transform: uppercase;
+
+  /* Nav Link */
+  --nav-link-font-weight: 400;
+  --nav-link-font-size: 14px;
+  --nav-link-line-height: 14px;
+  --nav-link-letter-spacing: 2px;
+
+  /* Button text */
+  --button-font-weight: 500;
+  --button-font-size: 15px;
+  --button-line-height: 100%;
+  --button-letter-spacing: 1px;
+  --button-text-transform: uppercase;
+
+  /* Placeholder */
+  --placeholder-font-weight: 500;
+  --placeholder-font-size: 15px;
+  --placeholder-line-height: 26px;
+  --placeholder-letter-spacing: 0px;
+  --placeholder-color: var(--color-primary-white);
+
+  /* Button Sizes */
+  --button-width: 152px;
+  --button-height: 56px;
+
+  /* Button Variants: Light */
+  --button-light-bg: var(--color-primary-white);
+  --button-light-color: var(--color-secondary-dark-grey);
+  --button-light-hover-bg: var(--color-secondary-light-peach);
+  --button-light-hover-color: var(--color-primary-white);
+  /* Button Variants: Dark */
+  --button-dark-bg: var(--color-primary-peach);
+  --button-dark-color: var(--color-primary-white);
+  --button-dark-hover-bg: var(--color-secondary-light-peach);
+  --button-dark-hover-color: var(--color-primary-white);
+}
