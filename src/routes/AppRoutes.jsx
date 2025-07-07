@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import ROUTES from "./Routes";
-import Home from "../pages/Home";
-import WebDesign from "../pages/WebDesign";
-import AppDesign from "../pages/AppDesign";
-import GraphicDesign from "../pages/GraphicDesign";
-import About from "../pages/About";
-import Locations from "../pages/Locations";
-import Contact from "../pages/Contact";
+import Home from "../pages/Home/Home";
+import WebDesign from "../pages/webDesing/WebDesign";
+import AppDesign from "../pages/appDesign/AppDesign";
+import GraphicDesign from "../pages/GraphicDesign/GraphicDesign";
+import About from "../pages/About/About";
+import Locations from "../pages/Locations/Locations";
+import Contact from "../pages/Contact/Contact";
 
 export default function AppRoutes() {
   return (
