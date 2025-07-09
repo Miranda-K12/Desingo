@@ -11,6 +11,8 @@
   border-radius: var(--border-radius-small);
   font-family: var(--font-family-primary);
   cursor: pointer;
+  background-color: var(--btn-bg);
+  color: var(--btn-color);
 }
 .button:hover {
   background-color: var(--btn-hover);
