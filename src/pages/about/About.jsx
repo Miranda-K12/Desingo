@@ -1,4 +1,10 @@
 import React from "react";
+import styles from "./About.module.css";
+import Button from "../../components/sharedComponents/button/Button";
+import CanadaImage from "../../assets/contact/desktop/Canada.png";
+import UkImage from "../../assets/contact/desktop/uk.png";
+import AustraliaImage from "../../assets/contact/desktop/Australia.png";
+
 import HeroSection from "../../components/sharedComponents/heroSection/HeroSection";
 import CountryCard from "../../components/sharedComponents/officeInfo/OfficeInfo";
 import BrandsSrory from "../../components/sharedComponents/brandStory/BrandStory";
