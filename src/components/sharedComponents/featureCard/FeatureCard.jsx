@@ -7,7 +7,7 @@ function FeatureCard({ title, description, image }) {
       <img src={image} alt={title} />
       <div className={styles.info}>
         <h3>{title}</h3>
-        <p>{description}</p>
+        <p className="p">{description}</p>
       </div>
     </div>
   );

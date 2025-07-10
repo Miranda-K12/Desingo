@@ -40,7 +40,7 @@
     margin-bottom: 16px;
   }
 
-  p {
+  .p {
     color: var(--color-secondary-dark-grey);
     font-family: var(--font-family-primary);
     font-weight: var(--body-font-weight-regular);
@@ -81,7 +81,7 @@
     margin-bottom: 15px;
   }
 
-  p {
+  .p {
     color: var(--color-secondary-dark-grey);
     font-family: var(--font-family-primary);
     font-weight: var(--body-font-weight-regular);
