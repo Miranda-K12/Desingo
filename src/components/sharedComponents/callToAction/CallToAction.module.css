@@ -9,6 +9,9 @@
     gap: 1rem;
     border-radius: var(--border-radius-medium);
     position: absolute;
+    max-width: 1112px;
+    width: 100%;
+    margin: 0 auto;
 }
 .bgImage {
     position: absolute;
@@ -27,6 +30,7 @@
     text-align: center;
     align-items: center;
     padding: 3rem 2rem;
+    max-width: 690px;
   }
 
   .bgImage {

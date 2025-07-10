@@ -24,16 +24,15 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   justifyContent: "space-between",
   color: "black",
   boxShadow: "none",
-  paddingLeft: 0,
-  paddingRight: 0,
+  maxWidth: "1112px",
+  margin: "0 auto",
+  width: "100%",
 
   [theme.breakpoints.up("sm")]: {
-    paddingLeft: 0,
-    paddingRight: 0,
+    maxWidth: "690px",
   },
   [theme.breakpoints.up("md")]: {
-    paddingLeft: 0,
-    paddingRight: 0,
+    maxWidth: "1112px"
   },
 }));
 
@@ -60,19 +59,9 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-  const isTablet = useMediaQuery(theme.breakpoints.between("sm", "md"));
-  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
   const navigate = useNavigate();
 
-  const headerActivePadding = isScrolled
-    ? isDesktop
-      ? 20
-      : isTablet
-      ? 3
-      : isMobile
-      ? 3
-      : 0
-    : 0;
+
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const handleOpenMenu = (event) => setAnchorEl(event.currentTarget);
@@ -99,8 +88,6 @@ const Header = () => {
       sx={{
         marginBottom: 4,
         transition: "border-bottom 0.2s ease",
-        paddingLeft: headerActivePadding,
-        paddingRight: headerActivePadding,
         borderBottom: isScrolled ? "1px solid #000" : "none",
         backgroundColor: "white",
         zIndex: 1300,

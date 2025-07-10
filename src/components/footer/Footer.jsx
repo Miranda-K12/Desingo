@@ -89,6 +89,7 @@ function Footer() {
         flexDirection: "column",
         justifyContent: "space-between",
         gap: 2,
+        width: "100vw",
       }}
     >
       {isMobile ? (
