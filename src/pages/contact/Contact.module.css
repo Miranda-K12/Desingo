@@ -1,0 +1,129 @@
+.contactWrapper {
+  max-width: 1110px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 64px;
+  overflow: hidden;
+}
+.contactHero {
+  background-color: var(--color-primary-peach);
+  padding: 55px 95px;
+  display: flex;
+  justify-content: space-between;
+  gap: 95px;
+  margin-bottom: 160px;
+  align-items: center;
+  position: relative;
+  border-radius: var(--border-radius-medium);
+}
+
+.contactBox {
+  color: var(--color-primary-white);
+  width: 445px;
+}
+.contactHeader {
+  font-weight: var(--h1-font-weight);
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  margin-bottom: 32px;
+}
+.contactText {
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+}
+.countryList {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--color-primary-white);
+}
+
+.form {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 25px;
+}
+.inputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-primary-white);
+  color: var(--color-primary-white);
+  font-size: var(--body-small-font-size);
+  padding-bottom: 12px;
+  padding-left: 16px;
+  line-height: var(--body-line-height);
+  outline: none;
+  cursor: pointer;
+  transition: border-bottom 0.2s ease;
+}
+
+.input:focus {
+  border-bottom: 3px solid white;
+}
+.input::placeholder {
+  opacity: 50%;
+  color: var(--color-primary-white);
+}
+
+.errorMessage {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 12px;
+  font-style: italic;
+  display: flex;
+  gap: 9px;
+}
+
+@media (max-width: 768px) {
+  .contactHero {
+    padding: 71px 58px;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 120px;
+  }
+  .form,
+  .contactBox {
+    width: 573px;
+  }
+  .countryList {
+    flex-direction: column;
+    gap: 80px;
+  }
+}
+@media (max-width: 375px) {
+  .countryList {
+    gap: 48px;
+  }
+  .contactWrapper {
+    width: 100%;
+  }
+  .contactHero {
+    padding: 72px 24px;
+    gap: 40px;
+    margin-bottom: 120px;
+    text-align: center;
+  }
+  .form,
+  .contactBox {
+    width: 327px;
+    align-items: center;
+  }
+  .contactHeader {
+    font-size: var(--h1-font-mobile);
+    margin-bottom: 24px;
+  }
+  .contactText {
+    font-size: var(--body-small-font-size);
+  }
+}
