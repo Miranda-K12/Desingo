@@ -33,6 +33,10 @@
     .title {
         margin-bottom: 16px;
     }
+
+    .description {
+        margin: 0;
+    }
 }
 
 @media (max-width: 400px) {
