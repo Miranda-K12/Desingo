@@ -1,6 +1,7 @@
+
 import React from 'react'
 import FeatureCard from '../../components/sharedComponents/featureCard/FeatureCard';
-
+import HeroSection from "../../components/sharedComponents/heroSection/HeroSection";
 import imag1 from "../../assets/graphic-design/desktop/image-change.jpg";
 import imag2 from "../../assets/graphic-design/desktop/image-boxed-water.jpg";
 import imag3 from "../../assets/graphic-design/desktop/image-science.jpg";
@@ -14,6 +15,14 @@ import imageApp from "../../assets/home/desktop/image-app-design.jpg";
 function GraphicDesign() {
   return (
     <>
+<div>
+      <HeroSection
+        title="Graphic Design"
+        description="We deliver eye-catching branding materials that are 
+tailored to meet your business objectives."
+        variant="graphic"
+      />
+    </div>
     <div className={styles.projects3}>
       
       <FeatureCard title="TIM BROWN" description="A book cover designed for Tim Brown’s new release, ‘Change’" image={imag1} />
@@ -30,4 +39,5 @@ function GraphicDesign() {
     </>
   );
 }
+
 export default GraphicDesign;

@@ -1,6 +1,7 @@
+
 import React from 'react'
 import FeatureCard from '../../components/sharedComponents/featureCard/FeatureCard'
-
+import HeroSection from "../../components/sharedComponents/heroSection/HeroSection";
 import img1 from "../../assets/web-design/desktop/image-express.jpg";
 import img2 from "../../assets/web-design/desktop/image-transfer.jpg";
 import img3 from "../../assets/web-design/desktop/image-photon.jpg";
@@ -18,6 +19,14 @@ import imageGraphic from "../../assets/home/desktop/image-graphic-design.jpg";
 function WebDesign() {
   return (
     <>
+ <div>
+      <HeroSection
+        title="Web Design"
+        description="We build websites that serve as powerful marketing tools 
+and bring memorable brand experiences."
+        variant="web"
+      />
+    </div>
     <div className={styles.projects}>
 
       <FeatureCard title="EXPRESS" description="A multi-carrier shipping website for ecommerce businesses" image={img1} />
@@ -35,4 +44,5 @@ function WebDesign() {
       </>
   );
 }
+
 export default WebDesign;

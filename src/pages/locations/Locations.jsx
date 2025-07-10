@@ -1,9 +1,8 @@
-import React from 'react'
+
+import React from "react";
 
 function Locations() {
-  return (
-    <div>Locations</div>
-  )
+  return <div></div>;
 }
+export default Locations;
 
-export default Locations

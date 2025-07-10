@@ -1,0 +1,144 @@
+/* Main Section */
+.splitSection {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+  margin-bottom: 32px;
+}
+
+.locationText {
+  background-color: var(--color-third-light-peach);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 88px 95px;
+  width: 730px;
+  border-radius: var(--border-radius-medium);
+}
+
+.textWrapper {
+  margin: 0 auto;
+  width: 540px;
+}
+
+.locationInfo {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--body-font-size);
+  color: var(--color-secondary-dark-grey);
+  line-height: var(--body-line-height);
+  flex-wrap: wrap; /* merged this property */
+  gap: 1rem; /* merged this property */
+}
+
+.subHeader {
+  font-size: var(--h2-font-size);
+  font-weight: var(--h2-font-weight);
+  line-height: var(--h2-line-height);
+  color: var(--color-primary-peach);
+  margin-bottom: 24px;
+}
+
+.subTitle {
+  font-weight: var(--body-font-weight-bold);
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.imageWrapper {
+  width: 350px;
+  height: 326px;
+  flex-shrink: 0;
+  border-radius: var(--border-radius-medium);
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: var(--border-radius-medium);
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .splitSection,
+  .reverse {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: flex-start;
+    width: 689px;
+    margin: 0 auto;
+  }
+
+  .splitSection {
+    margin-bottom: 120px;
+  }
+
+  .locationText {
+    padding: 88px 75px;
+    text-align: left;
+    justify-content: flex-start;
+    width: 689px;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    height: 326px; /* If height is fixed, consider changing it to 'auto' or 'vh' */
+  }
+}
+
+/* For mobile screens (max-width: 375px) */
+@media (max-width: 375px) {
+  .splitSection,
+  .reverse {
+    gap: 0;
+    width: 375px;
+  }
+
+  .splitSection {
+    margin-bottom: 40px;
+  }
+
+  .textWrapper {
+    width: 375px;
+    padding: 80px 24px;
+  }
+
+  .locationText {
+    padding: 0;
+    width: 375px;
+    border-radius: 0;
+  }
+
+  .locationInfo {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+    font-size: var(--body-small-font-size);
+    line-height: var(--body-line-height);
+  }
+
+  .subHeader {
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .imageWrapper {
+    width: 375px;
+    height: 326px;
+    border-radius: 0;
+  }
+
+  .imageWrapper img {
+    border-radius: 0;
+  }
+}

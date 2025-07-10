@@ -1,4 +1,7 @@
-import React from 'react'
+
+import React from "react";
+import HeroSection from "../../components/sharedComponents/heroSection/HeroSection";
+
 import FeatureCard from '../../components/sharedComponents/featureCard/FeatureCard';
 
 import image1 from "../../assets/app-design/desktop/image-airfilter.jpg";
@@ -18,6 +21,14 @@ import imageGraphic from "../../assets/home/desktop/image-graphic-design.jpg";
 function AppDesign() {
   return (
     <>
+    <div>
+      <HeroSection
+        title="App Design"
+        description="Our mobile designs bring intuitive digital solutions
+ to your customers right at their fingertips."
+        variant="app"
+      />
+    </div>
     <div className={styles.projects2}>
       
       <FeatureCard title="AIRFILTER" description="Solving the problem of poor indoor air quality by filtering the air" image={image1} />
@@ -36,3 +47,5 @@ function AppDesign() {
   );
 }
 export default AppDesign;
+
+
