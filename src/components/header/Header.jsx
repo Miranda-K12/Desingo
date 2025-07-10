@@ -32,7 +32,7 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
     maxWidth: "690px",
   },
   [theme.breakpoints.up("md")]: {
-    maxWidth: "1112px"
+    maxWidth: "1112px",
   },
 }));
 
@@ -61,8 +61,6 @@ const Header = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const navigate = useNavigate();
 
-
-
   const [anchorEl, setAnchorEl] = React.useState(null);
   const handleOpenMenu = (event) => setAnchorEl(event.currentTarget);
   const handleCloseMenu = () => setAnchorEl(null);
@@ -86,7 +84,7 @@ const Header = () => {
       position={isScrolled ? "fixed" : "static"}
       elevation={0}
       sx={{
-        marginBottom: 4,
+        marginBottom: isMobile ? 2 : 4,
         transition: "border-bottom 0.2s ease",
         borderBottom: isScrolled ? "1px solid #000" : "none",
         backgroundColor: "white",
@@ -112,6 +110,7 @@ const Header = () => {
               anchorEl={anchorEl}
               open={Boolean(anchorEl)}
               onClose={handleCloseMenu}
+              // edit menu to take full width and be black
             >
               {pages.map(({ label, path }) => (
                 <MenuItem key={label} onClick={handleCloseMenu}>
