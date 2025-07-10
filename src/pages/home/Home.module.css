@@ -1,5 +1,5 @@
 /* OfficeInfo კომპონენტის ვრაპერის სტილები  */
-.officeInfoContainer {
+.CompanyValueContainer {
     display: flex;
     gap: 30px;
     width: 1110px;
@@ -7,7 +7,7 @@
 }
 
 @media (max-width: 768px) {
-    .officeInfoContainer {
+    .CompanyValueContainer {
         width: 690px;
         margin: 120px auto;
         flex-direction: column;
@@ -16,7 +16,7 @@
 }
 
 @media (max-width: 400px) {
-    .officeInfoContainer {
+    .CompanyValueContainer {
         width: 327px;
         gap: 80px;
     }
