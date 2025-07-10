@@ -25,7 +25,8 @@
 /* Black cards - Maka */
 /* Responsive 768-1920px Desktop*/
 
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 769px) {
   .gridContainer {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -34,7 +35,7 @@
   column-gap: 30px;
   max-width: 1112px;
   margin: 100px auto 0 auto;
-  padding: 0 20px;
+  /* padding: 0; */
 }
 
 /* Web Design - პირველი დიდი ბარათი */
@@ -62,7 +63,7 @@
 }
 }
 /* Responsive 375-767px  Tablet */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .gridContainer {
   max-width: 689px;
   margin: 67px auto 0 auto;
