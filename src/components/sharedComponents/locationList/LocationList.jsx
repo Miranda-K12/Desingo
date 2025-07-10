@@ -1,7 +1,7 @@
 import React from "react";
 
-function Locations() {
+function LocationList() {
   return <div></div>;
 }
 
-export default Locations;
+export default LocationList;
