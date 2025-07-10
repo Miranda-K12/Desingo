@@ -1,0 +1,60 @@
+/* InfoCard  - Maka */
+.blackcard {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  border-radius: var(--border-radius-medium);
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4); 
+  padding: 20px;
+  z-index: 1;
+  transition: background-color var(--transition);
+}
+
+.blackcard:hover .overlay {
+  background-color: rgba(231, 129, 107, 0.6); 
+}
+
+.overlay h2 {
+  font-family: var(--font-family-primary);
+  font-size: var(--h2-font-size);
+  font-weight: var(--h2-font-weight);
+  letter-spacing: var(--h2-letter-spacing);
+  color: var(--color-primary-white);
+  text-transform: var(--body-small-text-transform);
+  margin-bottom: 24px;
+}
+
+.overlay p {
+  font-family: var(--font-family-primary);
+  font-size: var(  --body-small-font-size);
+  font-weight: var(--body-small-font-weight);
+  letter-spacing: var(--body-small-letter-spacing);
+  color: var(--color-primary-white);
+  text-transform: var(--body-small-text-transform);
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  width: 8px;
+  height: auto;
+  margin-left: 10px;
+  vertical-align: middle;
+}
