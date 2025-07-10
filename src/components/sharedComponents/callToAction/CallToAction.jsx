@@ -32,7 +32,12 @@ function CallToAction() {
         <img src={CallToActionBg} alt="" />
       </Box>
       <Box sx={{ position: "relative", zIndex: 9000 }}>
-        <CallToActionBtn>Get in Touch</CallToActionBtn>
+        <CallToActionBtn
+          bg="var(--color-primary-white)"
+          color="var(--color-primary-black)"
+        >
+          Get in Touch
+        </CallToActionBtn>
       </Box>
     </Box>
     // Take care of the responsive part here

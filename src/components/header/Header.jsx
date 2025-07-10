@@ -94,7 +94,9 @@ const Header = () => {
       }}
     >
       <StyledToolbar>
-        <Logo src={designoLogo} alt="Designo logo" />
+        <NavButton onClick={() => navigate("/")}>
+          <Logo src={designoLogo} alt="Designo logo" />
+        </NavButton>
 
         {isMobile ? (
           <>
