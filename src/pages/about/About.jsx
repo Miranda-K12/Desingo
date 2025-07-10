@@ -1,5 +1,6 @@
 import React from "react";
 import HeroSection from "../../components/sharedComponents/heroSection/HeroSection";
+import CountryCard from "../../components/sharedComponents/officeInfo/OfficeInfo"
 import BrandsSrory from "../../components/sharedComponents/brandStory/BrandStory";
 // images for BrandsSrory component
 import bgImage from "../../assets/about/desktop/brand-cover.png";
@@ -24,6 +25,24 @@ Our team is multi-disciplinary and we are not merely interested in form — cont
         floatingImage={floatImg1}
         imagePosition="left"
       />
+
+      <div className={styles.countryList}>
+        <CountryCard
+          imageSrc={CanadaImage}
+          title="Canada"
+          buttonText="See Location"
+        />
+        <CountryCard
+          imageSrc={AustraliaImage}
+          title="Australia"
+          buttonText="See Location"
+        />
+        <CountryCard
+          imageSrc={UkImage}
+          title="United Kingdom"
+          buttonText="See Location"
+        />
+      </div>
     </div>
   );
 }
