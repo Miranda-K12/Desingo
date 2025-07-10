@@ -1,3 +1,4 @@
+
 import React from "react";
 import styles from "./Home.module.css";
 import HeroSection from "../../components/sharedComponents/heroSection/HeroSection";
@@ -15,3 +16,4 @@ function Home() {
 }
 
 export default Home;
+
