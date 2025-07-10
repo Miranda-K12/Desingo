@@ -22,6 +22,7 @@
   /* Typography: Headings */
   --h1-font-weight: 500;
   --h1-font-size: 48px;
+  --h1-font-mobile: 32px;
   --h1-line-height: 48px;
   --h1-letter-spacing: 0;
 
