@@ -1,26 +1,26 @@
 .CallToAction {
-    height: 292px;
-    background-color: var(--color-primary-peach);
-    display: flex;
-    justify-content: space-around;
-    color: white;
-    align-items: center;
-    overflow: hidden;
-    gap: 1rem;
-    border-radius: var(--border-radius-medium);
-    position: absolute;
-    max-width: 1112px;
-    width: 100%;
-    margin: 0 auto;
+  height: 292px;
+  background-color: var(--color-primary-peach);
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  align-items: center;
+  overflow: hidden;
+  gap: 1rem;
+  border-radius: var(--border-radius-medium);
+  position: absolute;
+  max-width: 1112px;
+  width: 100%;
+  margin: 0 auto;
 }
 .bgImage {
-    position: absolute;
-    right: 0;
+  position: absolute;
+  right: 0;
 }
 .descriptionCont {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 @media (max-width: 900px) {
@@ -30,7 +30,7 @@
     text-align: center;
     align-items: center;
     padding: 3rem 2rem;
-    max-width: 690px;
+    /* max-width: 690px; */
   }
 
   .bgImage {
@@ -41,5 +41,17 @@
     height: 100%;
     background-size: cover;
     opacity: 0.3;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 900px) {
+  .CallToAction {
+    max-width: 690px;
+  }
+}
+
+@media (max-width: 375px) {
+  .CallToAction {
+    max-width: 327px;
   }
 }
