@@ -57,13 +57,20 @@ const pages = [
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isBurgerExpanded, setIsBurgerExpanded] = useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const navigate = useNavigate();
 
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const handleOpenMenu = (event) => setAnchorEl(event.currentTarget);
-  const handleCloseMenu = () => setAnchorEl(null);
+  const handleOpenMenu = (event) => {
+    setAnchorEl(event.currentTarget);
+    setIsBurgerExpanded(true);
+  };
+  const handleCloseMenu = () => {
+    setAnchorEl(null);
+    setIsBurgerExpanded(false);
+  };
 
   useEffect(() => {
     const onScroll = () => {
@@ -78,6 +85,15 @@ const Header = () => {
 
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  useEffect(() => {
+    const root = document.getElementById("root");
+    if (isBurgerExpanded) {
+      root.classList.add("burger-active");
+    } else {
+      root.classList.remove("burger-active");
+    }
+  }, [isBurgerExpanded]);
 
   return (
     <AppBar
@@ -98,6 +114,10 @@ const Header = () => {
 
         {isMobile ? (
           <>
+            {isBurgerExpanded && (
+              <div className="burger-overlay" onClick={handleCloseMenu} />
+            )}
+
             <IconButton
               size="large"
               edge="start"
@@ -106,15 +126,45 @@ const Header = () => {
             >
               <MenuIcon />
             </IconButton>
+
             <Menu
               anchorEl={anchorEl}
               open={Boolean(anchorEl)}
               onClose={handleCloseMenu}
-              // edit menu to take full width and be black
+              anchorOrigin={{
+                vertical: "top",
+                horizontal: "right",
+              }}
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "right",
+              }}
+              PaperProps={{
+                sx: {
+                  width: "100vw",
+                  maxWidth: "100vw",
+                  left: "0 !important",
+                  backgroundColor: "black",
+                  color: "white",
+                  paddingTop: 2,
+                  paddingBottom: 2,
+                  marginTop: "2rem",
+                  borderRadius: 0,
+                },
+              }}
             >
               {pages.map(({ label, path }) => (
-                <MenuItem key={label} onClick={handleCloseMenu}>
-                  <Typography textAlign="center" onClick={() => navigate(path)}>
+                <MenuItem
+                  key={label}
+                  onClick={() => {
+                    handleCloseMenu();
+                    navigate(path);
+                  }}
+                >
+                  <Typography
+                    textAlign="center"
+                    sx={{ textTransform: "uppercase" }}
+                  >
                     {label}
                   </Typography>
                 </MenuItem>
