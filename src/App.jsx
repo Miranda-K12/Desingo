@@ -5,6 +5,7 @@ import Header from "./components/header/Header";
 import CallToAction from "./components/sharedComponents/callToAction/CallToAction";
 import Footer from "./components/footer/Footer";
 import { useLocation } from "react-router-dom";
+import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 
 function App() {
   const location = useLocation();
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <>
+    <ScrollToTop />
     <Header />
       <main className="main-content-container">
         <AppRoutes />
