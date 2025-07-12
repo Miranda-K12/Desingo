@@ -11,7 +11,7 @@ Users should be able to:
 
 # Links
 - Solution URL: https://github.com/Miranda-K12/Desingo.git
-- Live Site URL: https://miranda-k12.github.io/
+- Live Site URL: [https://miranda-k12.github.io/](https://miranda-k12.github.io/Desingo/)
 
 # Built with
 - HTML
