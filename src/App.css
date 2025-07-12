@@ -1,1 +1,9 @@
+.main-content-container {
+  margin-bottom: 10rem;
+}
 
+@media screen and (max-width: 768px) {
+  .main-content-container {
+    margin-bottom: 7.5rem;
+  }
+}
