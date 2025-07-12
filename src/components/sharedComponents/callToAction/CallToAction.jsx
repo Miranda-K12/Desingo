@@ -6,10 +6,12 @@ import CallToActionBtn from "../button/Button";
 import CallToActionBg from "../../../assets/shared/desktop/bg-pattern-call-to-action.svg";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 function CallToAction() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const navigate = useNavigate();
   return (
     <Box
       className={styles.CallToAction}
@@ -35,6 +37,7 @@ function CallToAction() {
         <CallToActionBtn
           bg="var(--color-primary-white)"
           color="var(--color-primary-black)"
+          onClick={() => navigate("/contact")}
         >
           Get in Touch
         </CallToActionBtn>
