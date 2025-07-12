@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import styles from "./Home.module.css";
 import HeroSection from "../../components/sharedComponents/heroSection/HeroSection";
 import InfoCard from "../../components/sharedComponents/infoCard/InfoCard";
@@ -9,6 +9,8 @@ import CompanyValue from "../../components/sharedComponents/companyValue/Company
 import CompanyValueData from "../../components/sharedComponents/companyValue/CompanyValueData";
 
 function Home() {
+  const scrollTargetRef = useRef(null);
+
   return (
     <>
       <div>
@@ -17,9 +19,10 @@ function Home() {
           description="With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services."
           buttonText="Learn More"
           variant="home"
+          scrollTargetRef={scrollTargetRef}
         />
       </div>
-      <div className={styles.gridContainer}>
+      <div className={styles.gridContainer} ref={scrollTargetRef}>
         <InfoCard
           title="Web Design"
           link="/web-design"
