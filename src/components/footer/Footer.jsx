@@ -65,7 +65,7 @@ const socials = [
   },
 ];
 
-function Footer() {
+function Footer({hasCallToAction}) {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isTablet = useMediaQuery(theme.breakpoints.between("sm", "md"));
@@ -84,7 +84,7 @@ function Footer() {
       sx={{
         backgroundColor: "var(--color-primary-black)",
         color: "lightgray",
-        padding: theme.spacing(20, 10, 10, 10),
+        padding: hasCallToAction ? theme.spacing(20, 10, 10, 10) : theme.spacing(10),
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",

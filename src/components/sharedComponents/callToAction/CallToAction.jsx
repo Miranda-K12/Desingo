@@ -41,7 +41,6 @@ function CallToAction() {
         >
           Get in Touch
         </CallToActionBtn>
-        {/* on mobile resolution give component spacing on sides */}
       </Box>
     </Box>
   );

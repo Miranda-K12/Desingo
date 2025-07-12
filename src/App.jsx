@@ -13,13 +13,17 @@ function App() {
 
   return (
     <>
-    <ScrollToTop />
-    <Header />
+      <ScrollToTop />
+      <Header />
       <main className="main-content-container">
         <AppRoutes />
       </main>
-      {!isContactPage && <CallToAction />}
-      <Footer />
+      {!isContactPage ? (
+        <>
+          <CallToAction />
+          <Footer hasCallToAction={!isContactPage} />
+        </>
+      ) : (<Footer />)}
     </>
   );
 }
